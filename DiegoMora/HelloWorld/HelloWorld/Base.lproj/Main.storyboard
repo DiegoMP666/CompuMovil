@@ -1,25 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YIL-mA-qnW">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Portada-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
-                    <imageView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PokemonWPP" id="DaV-Z7-FxX">
+                <viewController id="BYZ-38-t0r" userLabel="Portada" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Snw-Y5-zxq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PokemonWPP" translatesAutoresizingMaskIntoConstraints="NO" id="aPA-8L-9Mp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9M-SW-Hft">
+                                <rect key="frame" x="124" y="681" width="166" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.55828666950000005" blue="0.50136938050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Ingresar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.39512849639999997" green="0.30764238570000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iVY-Nh-6Fp" kind="show" id="ocP-jD-S5v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aPA-8L-9Mp" firstAttribute="leading" secondItem="Snw-Y5-zxq" secondAttribute="leading" id="5J6-ex-px6"/>
+                            <constraint firstItem="aPA-8L-9Mp" firstAttribute="top" secondItem="Snw-Y5-zxq" secondAttribute="top" id="9zi-Um-kua"/>
+                            <constraint firstAttribute="bottom" secondItem="aPA-8L-9Mp" secondAttribute="bottom" id="KQk-e6-vjw"/>
+                            <constraint firstAttribute="trailing" secondItem="aPA-8L-9Mp" secondAttribute="trailing" id="Vnf-a2-d3d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6oU-Wu-ufO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Portada" id="DZd-7a-mES">
+                        <barButtonItem key="backBarButtonItem" title="RETURN" id="EeU-qY-OsX"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="115.84821428571428"/>
+        </scene>
+        <!--Bienvenida-->
+        <scene sceneID="V4B-Db-v32">
+            <objects>
+                <viewController id="iVY-Nh-6Fp" userLabel="Bienvenida" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z5s-1z-rep">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2a-z8-96D">
+                                <rect key="frame" x="159" y="487" width="116" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.39512849639999997" green="0.30764238570000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="tintColor" red="0.39512849639999997" green="0.30764238570000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Seguir">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VDs-yT-Xlu" kind="show" id="Icc-Pb-J5K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12873296410382906" green="0.60740392576077928" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="bVA-Uf-xo9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bienvenida" id="ffV-RC-LW8">
+                        <barButtonItem key="backBarButtonItem" title="Regresaaa" id="D1H-Xa-nMr"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GUa-OH-rdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1997.1014492753625" y="115.84821428571428"/>
+        </scene>
+        <!--Verdecito-->
+        <scene sceneID="RC8-M4-rPU">
+            <objects>
+                <viewController id="VDs-yT-Xlu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mze-EJ-FLQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.18599342266357066" green="1" blue="0.19616673516012062" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="hHx-0v-hsT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Verdecito" id="ctt-dU-s9d">
+                        <barButtonItem key="rightBarButtonItem" title="Cerrar" id="bBz-VJ-3Pu">
+                            <connections>
+                                <segue destination="x8J-dU-WlG" kind="unwind" unwindAction="unwindToPortadaWithUnwindSegue:" id="A3G-L1-lzZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CfB-EW-qVw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="x8J-dU-WlG" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2931.8840579710145" y="115.84821428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X7o-6f-mJ8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YIL-mA-qnW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Sw-NF-x2R">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1ik-GE-Hle"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="baZ-a7-uqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
         </scene>
     </scenes>
     <resources>
