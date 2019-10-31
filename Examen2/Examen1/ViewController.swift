@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Examen1
+//  Examen2
 //
-//  Created by Sofìa Gutièrrez on 10/25/19.
+//  Created by Diego Mora on 10/17/19.
 //  Copyright © 2019 unam. All rights reserved.
 //
 

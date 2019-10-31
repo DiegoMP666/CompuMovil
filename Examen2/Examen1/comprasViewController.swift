@@ -1,9 +1,9 @@
 //
 //  comprasViewController.swift
-//  Examen1Bandas
+//  Examen2
 //
-//  Created by Jerry Gordillo on 9/19/19.
-//  Copyright © 2019 Sofía Gutiérrez. All rights reserved.
+//  Created by Diego Mora on 10/17/19.
+//  Copyright © 2019 unam. All rights reserved.
 //
 
 import UIKit
